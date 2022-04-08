@@ -1,0 +1,430 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a, a:hover{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+.owl-nav{
+	display: none;
+}
+.owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #f79918 !important;
+}
+header{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 15px 0px;
+	width: 100%;
+}
+header #search{
+	position: relative;
+}
+header #search input{
+	height: 38px;
+	padding-left: 36px;
+	border-radius: 35px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: #ccc;
+	width: 75%;
+}
+header #search input::placeholder{
+	color: #ccc;
+	font-size: 14px;
+}
+header #search i{
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #ccc;
+	font-size: 14px;
+}
+header .logo{
+	font-size: 20px;
+    color: #000!important;
+    font-weight: 700;
+    top: 6px;
+    position: relative;
+    line-height: 15px;
+}
+header .header-icon i{
+	font-size: 20px;
+	color: #000;
+	margin: 0px 8px;
+	line-height: 35px;
+}
+header .h-menu span{
+	width: 40px;
+	height: 2px;
+	background-color: #000 !important;
+	display: inline-block;
+	position: relative;
+	line-height: 15px;
+}
+header .h-menu span::before{
+	content: '';
+	width: 40px;
+	height: 2px;
+	background-color: #000 !important;
+	display: block;
+	position: absolute;
+	top: -10px;
+	transition: 0.2s;
+}
+header .h-menu span::after{
+	content: '';
+	width: 40px;
+	height: 2px;
+	background-color: #000 !important;
+	display: block;
+	position: absolute;
+	top: 10px;
+	transition: 0.2s;
+}
+header .h-menu span:hover::before{
+	transform: translateY(3px);
+	transition: 0.2s;
+}
+header .h-menu span:hover::after{
+	transform: translateY(-3px);
+	transition: 0.2s;
+}
+#banner{
+	width: 100%;
+}
+#banner .title{
+	font-size: 40px;
+	font-weight: 700;
+	color: #000;
+}
+.thumbnail{
+	border-radius: 8px;
+}
+#banner .p-desc{
+	padding: 36px 32px;
+}
+.meta-tags a{
+	font-size: 14px;
+	color: #222;
+	font-weight: 600;
+}
+.meta-tags .date{
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+}
+#banner .p-desc .p-title{
+	font-size: 40px;
+	color: #222;
+	font-weight: 700;
+	line-height: 1.3;
+}
+.pp-desc{
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+}
+.author h6{
+	font-size: 14px;
+	color: #222;
+	font-weight: 600;
+	padding-top: 16px;
+}
+.author p{
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+}
+#all-posts{
+	width: 100%;
+	padding: 100px 0px;
+}
+#all-posts h3 a{
+	display: inline-block;
+	font-size: 18px;
+	color: #222;
+	font-weight: 700;
+	line-height: 24px;
+}
+#sidemenu{
+	background: white;
+	position: absolute;
+	right: -50px;
+	top: 0;
+	bottom: 0;
+	z-index: 99;
+	width: 0px;
+	padding: 24px 42px;
+	transition: 0.2s;
+}
+#sidemenu .menubar ul li{
+	list-style: none;
+	margin-bottom: 8px;
+}
+#sidemenu .menubar ul li a{
+	color: #000000;
+	font-size: 18px;
+}
+#sidemenu .menubar ul li a:hover{
+	color: #f79918 !important;
+}
+.extra{
+	width: 290px !important;
+	right: 0 !important;
+	box-shadow: 0px -10px 10px 5px rgb(231 231 231 / 50%);
+	transition: 0.2s;
+}
+#post-slider{
+	width: 100%;
+	padding: 50px 0px;
+}
+#post-slider h3{
+	font-size: 20px;
+	font-weight: 700;
+}
+#post-slider h3 a{
+	color: #222;
+}
+#post-slider .swiper-wrapper{
+	transform: translate3d(16%, 0px, 0px,) !important;
+}
+#post-slider .swiper-slide{
+	width: 65%;
+}
+#post-slider .swiper-pagination-bullet{
+	background-color: #f79918 !important;
+}
+#post-slider h1{
+	font-size: 40px;
+	font-weight: 700;
+	color: black;
+}
+#post{
+	width: 100%;
+	padding: 100px 0px;
+}
+#post .i-img img{
+	width: 450px;
+	height: 170px;
+}
+#post h2{
+	font-size: 20px;
+	margin-left: 15px;
+	color: #222;
+	line-height: 1.2;
+	font-weight: 700;
+}
+#post a {
+	text-decoration: none;
+}
+#post .author {
+	margin-top: -10px !important;
+	margin-left: 15px;
+}
+#newsletter{
+  width: 100% !important;
+  padding: 50px 0px;
+  background-color: #f8f9fa !important;
+}
+#newsletter .form-control {
+  padding: 17px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 1px solid #ced4da;
+}
+#newsletter .form-control:focus {
+  	outline: none;
+    box-shadow: none;
+    border-color: #f79918;
+}
+#newsletter h2{
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: 700 !important;
+}
+#newsletter .button{
+  	padding: 12px 100px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    background-color: #f79918;
+    color: #fff;
+    border: 2px solid transparent;
+    line-height: 1.5;
+    margin-top: 43px;
+}
+#newsletter .button:hover{
+  background-color: #ffffff;
+  color: #f79918;
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+}
+footer{
+	width: 100%;
+	padding: 80px 0px;
+}
+.footer-icon{
+	margin-bottom: 40px;
+}
+.footer-icon a i{
+		font-size: 20px;
+		display: inline-block;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background: #ccc;
+    border-radius: 45%;
+    line-height: 45px;
+    text-align: center;
+		color: black;
+}
+.footer-icon a i:hover{
+	background: #f79918;
+	color: white;
+}
+.copyright p{
+		font-weight: 400;
+    font-size: 16px;
+    color: #888;
+}
+.copyright p{
+   margin: 15px 0px;
+}
+.cp-icon{
+	color: #dc3545;
+}
+.copyright p span{
+	border-bottom: 4px solid rgba(247, 153, 24, 0.1);
+}
+.copyright p span:hover{
+	border-bottom: 4px solid #f79918;
+}
+#nbanner.s-c{
+  font-size: 20px;
+  color: #888;
+}
+#nbanner img{
+	margin-top: 35px;
+}
+#nbanner .date{
+  font-size: 16px;
+  color: #888;
+}
+#nbanner h2{
+  font-weight: 700;
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  line-height: 1.2;
+}
+#nbanner .p-item{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #888;
+  line-height: 1.5;
+}
+#nbanner .pp-item{
+  font-size: 19px;
+  line-height: 1.7;
+  color: #888;
+  margin-top: 15px;
+  text-align: justify;
+  font-weight: 400;
+}
+#nbanner blockquote{
+  font-family: "Georgia", serif;
+  font-style: italic;
+  padding-left: 40px;
+  border-left: 2px solid #000;
+}
+#nbanner blockquote .ppp-item{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #888;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Georgia", serif;
+}
+#nbanner .s-img img{
+  width: 243px;
+  height: 212px;
+  margin-top: 0px;
+}
+#nbanner .h-item{
+  border-top: 1px solid rgb(218, 214, 214);
+  padding-top: 50px;
+}
+#nbanner h4{
+	color: #888888;
+	font-size: 16px;
+	font-weight: 700;
+}
+#nbanner .i-frem a i{
+  padding-left: 13px;
+  font-size: 20px;
+  color: #000;
+  transition: 0.3s;
+}
+#nbanner .i-frem a i:hover{
+  color: #f79918;
+  transition: 0.3s;
+}
+#related{
+  width: 100%;
+  padding: 70px 0px;
+}
+#related h5{
+	margin-left: 225px;
+	font-family: 'Poppins', sans-serif;
+	color: #888888;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+#related h2{
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+#related .c-item{
+  margin-left: -120px;
+}
+#related .c-item .meta-tags{
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+#related .c-item h2{
+  font-size: 22px;
+}
+#related .c-item h2 a{
+  text-decoration: none;
+  color: #000;
+}
+#related .c-item h6 a{
+  text-decoration: none;
+  color: #000;
+}
+#related .c-item p a{
+  text-decoration: none;
+  color: #999;
+}
+#related .c-item .p-t{
+  font-size: 14px;
+  margin-left: 16px;
+  color: #999;
+}
+#related .c-item .author{
+  margin-top: -15px;
+  margin-left: 10px;
+}
